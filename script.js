@@ -16,3 +16,15 @@ function fadeInOut () {
 }
 
 fadeInOut();
+
+$("#menuIcon").on("click", function () {
+    const menuStyle = $("#navbar p").css("display");
+    if(menuStyle === "none") {
+        $("#menuIcon").html("Close Menu");
+        $("#navbar p").css("display", "block");
+    } else {
+        $("#menuIcon").html("Menu")
+        $("#navbar p").css("display", "none");
+    }
+
+})

@@ -1,8 +1,14 @@
 body {
     margin: 0px;
+    padding: 0px;
+    max-width: 100vw;
 }
 #header {
     text-align: center;
+    margin: 20px 0px;
+}
+#header h3 {
+    margin-bottom: 0;
 }
 #navbar {
     background-color:navy;
@@ -14,11 +20,14 @@ body {
     margin: 15px 20px;
     font-size: 20px;
 }
+#menuIcon {
+    display: none;
+}
 #about img {
     width: 48%;
 }
-#about .aboutText {
-    width: 50%;
+.aboutText {
+    width: 49%;
     display: inline-block;
     vertical-align: top; 
     padding: 10px;  
@@ -28,12 +37,12 @@ body {
 }
 #recentListings {
     text-align:center;
+    padding: 15px;
 }
 #recentListings h2 {
     margin-bottom: 0px;
 }
 .listing {
-    /* border: 2px solid lightgrey; */
     border-radius: 5px;
     width: 28%;
     margin: 1.5%;
@@ -123,4 +132,48 @@ form button {
     padding: 10px 0px;
     font-size: 20px;
     font-weight: 500;
+}
+
+@media (max-width: 1025px) {
+    #about {
+        text-align: center;
+        overflow: hidden;
+    }
+    #about img {
+        width: 90%;
+        margin: 5%;
+        box-shadow: 0 0 10px grey;
+    }
+    .aboutText {
+        width: 90%;
+    }
+    #testimonials {
+        padding: 15px 5%;
+    }
+}
+@media (max-width: 769px) {
+    #navbar {
+        overflow: hidden;
+    }
+    #navbar p {
+        display: none;
+    }
+    #menuIcon {
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin: 15px 20px;
+    }
+    #menuIcon:hover {
+        cursor: pointer;
+    }
+}
+@media (max-width: 375px) {
+    .listing {
+        display:block;
+        width: 90%;
+    }
+    #footer img {
+        display: none;
+    }
 }
