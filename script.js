@@ -20,10 +20,10 @@ fadeInOut();
 $("#menuIcon").on("click", function () {
     const menuStyle = $("#navbar p").css("display");
     if(menuStyle === "none") {
-        $("#menuIcon").html("Close Menu");
+        $("#menuIcon").html("<img src='./visualAssets/close.png'/>Close Menu");
         $("#navbar p").css("display", "block");
     } else {
-        $("#menuIcon").html("Menu")
+        $("#menuIcon").html("<img src='./visualAssets/menu.png'/>Menu")
         $("#navbar p").css("display", "none");
     }
 
